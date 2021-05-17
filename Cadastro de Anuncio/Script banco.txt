@@ -1,0 +1,14 @@
+create database cadastro_de_anuncios;
+
+use cadastro_de_anuncios;
+
+
+create table anuncios(
+    id int auto_increment primary key,
+    nome_anuncio varchar(50) not null,
+    cliente varchar(50) not null,
+    data_inicio datetime not null,
+    data_fim datetime not null,
+    valor_dia double not null
+);
+
